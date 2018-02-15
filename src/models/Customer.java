@@ -47,7 +47,7 @@ public class Customer {
 	public String getFirstName() {
 	
 		return firstName;
-	}
+	} 
 	
 	public String getSurname() {
 		return surname;
