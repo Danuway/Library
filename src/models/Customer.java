@@ -37,6 +37,13 @@ public class Customer {
 
 	
 
+	public Date getExpiryDate() {
+		return expiryDate;
+	}
+
+
+
+
 	public String getFirstName() {
 	
 		return firstName;

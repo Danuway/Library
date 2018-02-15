@@ -1,10 +1,8 @@
 package ui;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.GregorianCalendar;
-
 import models.Book;
 import models.BookCatalog;
+import models.Customer;
+import utilities.GenderType;
 
 public class Main {
 
@@ -30,6 +28,8 @@ public class Main {
 		if (foundBook != null) {
 			System.out.println("We found " + foundBook.getTitle());
 		}
+		Customer customer = new Customer("Mr","Michael","Smith","1 The High Street", "1234", "a@b.com", 1,GenderType.MALE);
+		System.out.println(customer.getExpiryDate());
 	}
 
 }
