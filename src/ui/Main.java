@@ -9,7 +9,7 @@ import models.Customer;
 import utilities.GenderType;
 
 public class Main {
-
+ 
 	public static void main(String[] args) {
 
 		double d = 1;
@@ -47,8 +47,8 @@ public class Main {
 		
 		BookCatalog bookCatalog = new BookCatalog();
 
-		Book book1 = new Book(1, "An introduction to Java", "Matt Greencfoft", "12345");
-		Book book2 = new Book(2, "Better Java", "Joe Le Blanc", "23456");
+		Book book1 = new Book(1, "An introduction to Java", "Matt Greencfoft", "12345", "Anytown Branch", 400);
+		Book book2 = new Book(2, "Better Java", "Joe Le Blanc", "12345", "Anytown Branch",150);
 
 		bookCatalog.addBook(book1);
 		bookCatalog.addBook(book2);
@@ -65,6 +65,7 @@ public class Main {
 		}
 		Customer customer = new Customer("Mr","Michael","Smith","1 The High Street", "1234", "a@b.com", 1,GenderType.MALE);
 		System.out.println(customer.getExpiryDate());
+		System.out.println(customer.getMailingName());
 	}
 
 }

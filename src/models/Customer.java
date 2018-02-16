@@ -1,5 +1,4 @@
 package models;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -60,9 +59,15 @@ public class Customer {
 	}
 	
 	public String getMailingName() {
-		String mailingName;
-		mailingName = title + " " + firstName.substring(0,1) + " " + surname;
-		return mailingName;
+				
+		StringBuilder sb = new StringBuilder(title);
+		sb.append(" ");
+		sb.append(firstName.substring(0,1));
+		sb.append(" ");
+		sb.append(surname);
+		
+		return sb.toString();
+		
 	}
 
 	public GenderType getGender() {

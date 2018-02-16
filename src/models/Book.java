@@ -1,26 +1,18 @@
 package models;
 
-public class Book {
+public class Book extends Material{
 
-	private int bookID;
-	private String title;
 	private String author;
 	private String isbn;
-	public Book(int bookID, String title, String author, String isbn) {
+	private int noOfPages;
+	public Book(int bookID, String title, String author, String isbn, String branch, int noOfPages) {
 	
-		this.bookID = bookID;
-		this.title = title;
+		super(bookID,title, branch);
 		this.author = author;
 		this.isbn = isbn;
+		this.noOfPages = noOfPages;
 	}
 	
-	public int getBookID() {
-		return bookID;
-	}
-
-	public String getTitle() {
-		return title;
-	}
 	
 	public String getAuthor() {
 		return author;
